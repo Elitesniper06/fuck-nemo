@@ -26,7 +26,7 @@ uint16_t FGCOLOR=0xFFF1; // placeholder
 #endif
 
 #if !defined(CARDPUTER) && !defined(STICK_C_PLUS2) && !defined(STICK_C_PLUS) && !defined(STICK_C)
-  #define CARDPUTER
+  #define STICK_C_PLUS2
 #endif
 
 #if !defined(LANGUAGE_EN_US) && !defined(LANGUAGE_PT_BR) && !defined(LANGUAGE_IT_IT) && !defined(LANGUAGE_FR_FR)
@@ -2669,17 +2669,7 @@ void jammer_setup() {
   DISP.setCursor(50, 20);
   DISP.println("JAMMING");
   DISP.setCursor(50, 90);
-  DISP.println("STOPPED");
-  //if (!jammerActivated) {
-  //  noTone(JAMMER); 
-  //  jammerActivated = false;
-  //  DISP.fillScreen(BGCOLOR);
-  //  DISP.setTextColor(TFT_RED, BGCOLOR);
-  //  DISP.setCursor(50, 20);
-  //  DISP.println("JAMMING");
-  //  DISP.setCursor(50, 90);
-  //  DISP.println("STOPPED");
-  //} 
+  DISP.println("STOPPED"); 
 
   pinMode(JAMMER, OUTPUT);
 }
