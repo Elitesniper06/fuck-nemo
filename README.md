@@ -47,7 +47,6 @@
 ### Soon...
 
 * 🪽 433Mhz:
-  *  Jammer.
   *  Read Signals.
   *  Save Signals.
   *  Emulate Signals.
